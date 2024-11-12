@@ -2,7 +2,7 @@
 
 .markup {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
 
   .markup__title {
@@ -22,7 +22,7 @@
   }
 
   .markup__color-swatch {
-    aspect-ratio: 1;
+    aspect-ratio: 2;
     text-align: center;
     align-content: center;
     border: 1px solid black;
