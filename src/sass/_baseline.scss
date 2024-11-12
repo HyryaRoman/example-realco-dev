@@ -1,6 +1,8 @@
+@use "color-theme" as colors;
+
 body {
-  background-color: #ffffff;
-  color: #2A2C1F;
+  background-color: colors.$bg-light;
+  color: colors.$text-dark;
 }
 
 h1 {
@@ -25,4 +27,29 @@ h5 {
 
 h6 {
   font-size: 1rem;
+}
+
+a {
+  color: colors.$primary;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+mark {
+  display: inline-block;
+  padding: 0 0.25rem;
+  background-color: colors.$primary;
+  color: #FFFFFF;
 }

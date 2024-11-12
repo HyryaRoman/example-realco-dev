@@ -5,13 +5,23 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
 
+  .markup__title {
+    margin-bottom: 16px;
+  }
+
+  .markup__card {
+    background: colors.$bg-dark;
+    padding: 10px 20px 20px;
+    border-radius: 6px;
+  }
+
   .markup__color-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
-  &__color-swatch {
+  .markup__color-swatch {
     aspect-ratio: 1;
     text-align: center;
     align-content: center;
