@@ -1,0 +1,217 @@
+@use "color-theme" as colors;
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: colors.$bg-light;
+  color: colors.$text-dark;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  color: colors.$primary;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+mark {
+  display: inline-block;
+  padding: 0 0.25rem;
+  background-color: colors.$primary;
+  color: #FFFFFF;
+}
+
+ol,
+ul {
+  padding-left: 1.5rem;
+
+  &>li::marker {
+    color: colors.$primary;
+  }
+}
+
+$border-radius: 6px;
+$box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 9px 21px;
+
+  border: none;
+  border-radius: $border-radius;
+
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+
+  &.btn--block {
+    display: block;
+    width: 100%;
+  }
+
+  &.btn--inline {
+    display: inline-block;
+    width: fit-content;
+  }
+
+  &.btn--size-big {
+    padding: 13px 25px;
+    font-size: 1.5rem;
+  }
+
+  &.btn--icon-right::after {
+    content: 'chevron_right';
+    padding-left: 4px;
+
+    font-family: "Material Symbols Outlined";
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: sub;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.btn--style-primary {
+    background: colors.$primary;
+    color: #FFFFFF;
+
+    &:hover {
+      background: colors.lighten(colors.$primary, 1);
+    }
+
+    &:active {
+      background: colors.darken(colors.$primary, 0.6);
+    }
+  }
+
+  &.btn--style-outline {
+    background: colors.$bg-light;
+    color: colors.$text-dark;
+    border: 1px solid colors.$bg-darker;
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background: colors.darken(colors.$bg-light, 0.2);
+    }
+
+    &:active {
+      background: colors.darken(colors.$bg-light, 0.4);
+    }
+  }
+
+  &.btn--style-floating {
+    background: none;
+    color: inherit;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    &:active {
+      background: rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+.labeled-input {
+  display: block;
+  position: relative;
+
+  .labeled-input__input {
+    display: block;
+    width: 100%;
+    padding: 9px 16px;
+
+    border: 1px solid colors.$bg-darker;
+    border-radius: $border-radius;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    background: colors.$bg-light;
+    color: colors.$text-dark;
+
+    box-shadow: $box-shadow;
+  }
+
+  .labeled-input__label {
+    position: absolute;
+    top: 9px;
+    bottom: 9px;
+    left: 16px;
+
+    font-size: 20px;
+    line-height: 30px;
+    align-content: center;
+
+    color: colors.$text-light;
+  }
+
+  &.labeled-input--inline {
+    display: inline-block;
+  }
+
+  &.labeled-input--icon-search {
+    .labeled-input__input {
+      padding-left: 16px + 24px + 16px;
+    }
+
+    .labeled-input__label {
+      left: 16px + 24px + 16px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        bottom: 3px;
+        left: -(16px + 24px);
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../icons/search.svg');
+        background-position: center;
+      }
+    }
+  }
+}

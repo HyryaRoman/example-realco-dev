@@ -24,7 +24,7 @@ Rate: $6 per hour
 
 # Actual
 ### Time spent:
-- Markup: ___
+- Markup: 2.3h
 - Header: ___
 - Banner: ___
 - “How it works”: ___

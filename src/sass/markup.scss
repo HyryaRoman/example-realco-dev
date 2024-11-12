@@ -1,0 +1,74 @@
+@use "color-theme" as colors;
+
+.markup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  .markup__title {
+    margin-bottom: 16px;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  .markup__card {
+    background: colors.$bg-dark;
+    padding: 10px 20px 20px;
+    border-radius: 6px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .markup__color-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .markup__color-swatch {
+    aspect-ratio: 2;
+    text-align: center;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+
+    &.markup__color-swatch--color-primary {
+      background: colors.$primary;
+      color: white;
+    }
+
+    &.markup__color-swatch--color-secondary {
+      background: colors.$secondary;
+      color: white;
+    }
+
+    &.markup__color-swatch--color-text-light {
+      background: colors.$text-light;
+      color: white;
+    }
+
+    &.markup__color-swatch--color-text-dark {
+      background: colors.$text-dark;
+      color: white;
+    }
+
+    &.markup__color-swatch--color-bg-light {
+      background: colors.$bg-light;
+      color: black;
+    }
+
+    &.markup__color-swatch--color-bg-dark {
+      background: colors.$bg-dark;
+      color: black;
+    }
+
+    &.markup__color-swatch--color-bg-darker {
+      background: colors.$bg-darker;
+      color: black;
+    }
+  }
+}
