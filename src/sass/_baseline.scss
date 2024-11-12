@@ -53,3 +53,11 @@ mark {
   background-color: colors.$primary;
   color: #FFFFFF;
 }
+
+ol,ul {
+  padding-left: 1.5rem;
+
+  & > li::marker {
+    color: colors.$primary;
+  }
+}
