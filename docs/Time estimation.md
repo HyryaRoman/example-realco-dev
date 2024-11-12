@@ -1,25 +1,39 @@
 # Predicted
 ### Time estimate:
-- Markup: ___
-- Header: ___
-- \[ Sections Go Here \]
-- Footer: ___
+- Markup: 2h
+- Header: 1h
+- Banner: 1h
+- “How it works”: 1h
+- Benefits: 1.5h
+- Properties: 3h
+- Locations: 1h
+- Priority: 0.5h
+- Reviews: 1h
+- Posts: 3h
+- Footer: 1h
 
-Estimated Total: ___
+Estimated Total: 16h
 
-**Adjusted Total: ___**
+**Adjusted Total: 24h**
 
 ### Cost
 
-Rate: ___ per hour
+Rate: $6 per hour
 
-**Cost: ___**
+**Cost: $144**
 
 # Actual
 ### Time spent:
 - Markup: ___
 - Header: ___
-- \[ Sections Go Here \]
+- Banner: ___
+- “How it works”: ___
+- Benefits: ___
+- Properties: ___
+- Locations: ___
+- Priority: ___
+- Reviews: ___
+- Posts: ___
 - Footer: ___
 
 Total: ___
