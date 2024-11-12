@@ -7,12 +7,20 @@
 
   .markup__title {
     margin-bottom: 16px;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
   }
 
   .markup__card {
     background: colors.$bg-dark;
     padding: 10px 20px 20px;
     border-radius: 6px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 
   .markup__color-grid {

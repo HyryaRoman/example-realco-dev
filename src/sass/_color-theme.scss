@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $primary: #CF6F49;
 $secondary: #939878;
 
@@ -7,3 +9,13 @@ $text-dark: #2A2C1F;
 $bg-light: #FFFFFF;
 $bg-dark: #F5F5F2;
 $bg-darker: #E7E8E3;
+
+$adjustment-step: 10%;
+
+@function darken($color, $amount) {
+  @return color.scale($color, $lightness: $amount * -$adjustment-step, $space: oklch);
+}
+
+@function lighten($color, $amount) {
+  @return color.scale($color, $lightness: $amount * $adjustment-step * 2, $space: oklch);
+}
