@@ -100,28 +100,21 @@
 
     <div class="markup__card">
       <h2 class="markup__title">Inputs</h2>
-      <div class="">
-        <div class="form-floating">
-          <input class="form-control" id="markup-text" type="text" placeholder="">
-          <label class="color-black" for="markup-text">Name</label>
-        </div>
-        <div class="form-floating">
-          <input class="form-control" id="markup-password" type="password" placeholder="">
-          <label class="color-black" for="markup-password">Password</label>
-        </div>
-        <div class="form-floating">
-          <input class="form-control" id="markup-date" type="date" placeholder="">
-          <label class="color-black" for="markup-date">Date of birth</label>
-        </div>
-        <!-- <input class="form-control" type="file"> -->
-        <div class="form-check">
-          <input class="form-check-input" id="markup-checkbox" type="checkbox">
-          <label class="form-check-label" for="markup-checkbox">Lorem ipsum dolor</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" id="markup-radio" type="radio">
-          <label class="form-check-label" for="markup-radio">Lorem ipsum dolor</label>
-        </div>
+      <div class="labeled-input">
+        <input class="labeled-input__input" id="markup-text" type="text" placeholder="">
+        <label class="labeled-input__label" for="markup-text">Name</label>
+      </div>
+      <div class="labeled-input">
+        <input class="labeled-input__input" id="markup-password" type="password" placeholder="">
+        <label class="labeled-input__label" for="markup-password">Password</label>
+      </div>
+      <div class="labeled-input">
+        <input class="labeled-input__input" id="markup-password" type="search" placeholder="">
+        <label class="labeled-input__label" for="markup-password">Search</label>
+      </div>
+      <div class="labeled-input labeled-input--icon-search">
+        <input class="labeled-input__input" id="markup-password" type="search" placeholder="">
+        <label class="labeled-input__label" for="markup-password">Search with icon</label>
       </div>
     </div>
 
