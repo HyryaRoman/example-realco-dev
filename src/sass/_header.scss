@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  padding: 16px 0;
+
+  .header__logo {
+    vertical-align: middle;
+    margin-right: auto;
+  }
+
+  .header__navigation {
+    display: flex;
+    gap: 16px;
+
+    &>* {
+      display: contents;
+    }
+  }
+
+  .header__find-property-btn {
+    padding: 9px 26px;
+  }
+
+  .header__link {
+    padding: 9px 10px;
+  }
+}
