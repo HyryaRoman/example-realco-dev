@@ -1,0 +1,25 @@
+.shoutouts {
+  display: flex;
+  margin-top: 67px;
+  padding: 0 4px;
+
+  .shoutouts__description {
+    max-width: 250px;
+    margin-right: auto;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .shoutouts__list {
+    display: inline-flex;
+    gap: 32px;
+    margin-right: -7px;
+    padding: 13px 0;
+  }
+
+  .shoutouts__logo {
+    width: 120px;
+    height: fit-content;
+  }
+}
