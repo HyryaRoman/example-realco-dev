@@ -27,7 +27,7 @@ Rate: $6 per hour
 - Markup: 2.3h
 - Header: 1.7h
 - Banner: 0.7h
-- “How it works”: ___
+- “How it works”: 1h
 - Benefits: ___
 - Properties: ___
 - Locations: ___
