@@ -1,7 +1,6 @@
 .shoutouts {
   display: flex;
   margin-top: 67px;
-  padding: 0 4px;
 
   .shoutouts__description {
     max-width: 250px;
@@ -14,7 +13,6 @@
   .shoutouts__list {
     display: inline-flex;
     gap: 32px;
-    margin-right: -7px;
     padding: 13px 0;
   }
 
