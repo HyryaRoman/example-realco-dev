@@ -186,7 +186,23 @@ $box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
     align-content: center;
 
     color: colors.$text-light;
+
+    pointer-events: none;
   }
+
+  // ================================================================
+  // Technically, this could be done with placeholder text,
+  // however <label> has semantic meaning that placeholder does not.
+
+  &.labeled-input--state-empty .labeled-input__label {
+    opacity: 1;
+  }
+
+  &.labeled-input--state-filled .labeled-input__label {
+    opacity: 0;
+  }
+
+  // ================================================================
 
   &.labeled-input--inline {
     display: inline-block;
@@ -199,19 +215,23 @@ $box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 
     .labeled-input__label {
       left: 16px + 24px + 16px;
+    }
 
-      &:before {
-        content: '';
-        position: absolute;
-        top: 3px;
-        bottom: 3px;
-        left: -(16px + 24px);
-        display: block;
-        width: 24px;
-        height: 24px;
-        background-image: url('../icons/search.svg');
-        background-position: center;
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      bottom: 12px;
+      left: 16px;
+
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      background-image: url('../icons/search.svg');
+      background-position: center;
+
+      opacity: 1;
     }
   }
 }
