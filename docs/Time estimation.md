@@ -26,7 +26,7 @@ Rate: $6 per hour
 ### Time spent:
 - Markup: 2.3h
 - Header: 1.7h
-- Banner: ___
+- Banner: 0.7h
 - “How it works”: ___
 - Benefits: ___
 - Properties: ___
