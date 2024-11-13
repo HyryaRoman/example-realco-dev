@@ -1,0 +1,57 @@
+@use "color-theme" as colors;
+@use "baseline" as baseline;
+
+.how_it_works {
+  .how_it_works__description {
+    max-width: 750px;
+    margin: 0 auto 62px;
+
+    text-align: center;
+  }
+}
+
+.hiw-card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+
+  .hiw-card-holder__card {
+    display: block;
+
+    border: 1px solid colors.$bg-darker;
+    border-radius: 16px;
+
+    background-color: colors.$bg-light;
+
+    box-shadow: baseline.$box-shadow;
+  }
+
+  .hiw-card-holder__card-icon {
+    width: 48px;
+    margin: 49px auto 24px;
+  }
+
+  .hiw-card-holder__card-title {
+    margin-bottom: 17px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .hiw-card-holder__card-description {
+    margin: 0 auto 47px;
+    max-width: 305px;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: colors.$text-light;
+
+    &.hiw-card-holder__card-description--wide {
+      max-width: 340px;
+    }
+  }
+}
