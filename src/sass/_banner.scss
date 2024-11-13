@@ -1,6 +1,7 @@
 @use "color-theme" as colors;
 
 .banner {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: colors.$bg-dark;
@@ -38,5 +39,24 @@
     padding: 9px 18px 11px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 135px;
+    height: 147px;
+    background-image: url('../icons/banner/decor-top-left.svg');
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 135px;
+    height: 135px;
+    background-image: url('../icons/banner/decor-bottom-right.svg');
   }
 }
