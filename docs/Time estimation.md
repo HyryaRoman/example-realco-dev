@@ -28,7 +28,7 @@ Rate: $6 per hour
 - Header: 1.7h
 - Banner: 0.7h
 - “How it works”: 1h
-- Benefits: ___
+- Benefits: 1.2h
 - Properties: ___
 - Locations: ___
 - Priority: ___
