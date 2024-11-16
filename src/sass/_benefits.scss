@@ -1,0 +1,36 @@
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+  gap: 0 80px;
+
+  &.benefits--layout-r-image {
+    grid-template-areas: "text image";
+  }
+
+  &.benefits--layout-l-image {
+    grid-template-areas: "image text";
+  }
+
+  .benefits__text {
+    grid-area: text;
+    padding-right: 24px;
+    align-content: center;
+  }
+
+  .benefits__title {
+    margin-bottom: 28px;
+  }
+
+  .benefits__description {
+    margin-bottom: 21px;
+  }
+
+  .benefits__btn {
+    padding: 13px 31px;
+  }
+
+  .benefits__image {
+    grid-area: image;
+  }
+}
