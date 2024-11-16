@@ -36,7 +36,7 @@ export default function(config, {
         const dot = path.basename.lastIndexOf('.');
         const name = path.basename.slice(0, dot);
         const bp = path.basename.slice(dot + 1);
-        path.dirname = name;
+        path.dirname = path.dirname + '/' + name;
         path.basename = bp;
         path.extname = '.webp';
       };
