@@ -1,8 +1,32 @@
 @use "color-theme" as colors;
 
-.properties {
-  margin-top: 255px;
+.properties-section {
+  position: relative;
+  padding: 128px 0 157px;
+  margin: 0;
+  background-color: colors.$bg-dark;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 135px;
+    height: 135px;
+    background-image: url('../icons/decor/top-right.svg');
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 135px;
+    height: 135px;
+    background-image: url('../icons/decor/bottom-left.svg');
+  }
+}
+
+.properties {
   .properties__title {
     margin-bottom: 82px;
   }
@@ -32,6 +56,7 @@
 .property-card {
   display: block;
   border-radius: 0 0 12px 12px;
+  background-color: colors.$bg-light;
 
   .property-card__image {
     height: 268px;
