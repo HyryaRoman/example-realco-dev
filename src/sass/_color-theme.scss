@@ -12,6 +12,8 @@ $bg-darker: #E7E8E3;
 
 $adjustment-step: 10%;
 
+$box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+
 @function darken($color, $amount) {
   @return color.scale($color, $lightness: $amount * -$adjustment-step, $space: oklch);
 }

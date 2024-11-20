@@ -1,0 +1,50 @@
+@use "color-theme" as theme;
+
+.locations-section {
+  margin: 0;
+  padding-bottom: 128px;
+  background-color: theme.$bg-dark;
+}
+
+.locations {
+  .locations__description {
+    max-width: 720px;
+    margin: {
+      left: auto;
+      right: auto;
+    };
+
+    text-align: center;
+  }
+
+  .locations__card-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 74px 0 80px;
+  }
+}
+
+.location-card {
+  display: block;
+  padding: 33px;
+  border: 1px solid theme.$bg-darker;
+  border-radius: 16px;
+  background-color: theme.$bg-light;
+  box-shadow: theme.$box-shadow;
+
+  .location-card__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: theme.$text-dark;
+  }
+
+  .location-card__btn {
+    padding: 0px 3px;
+    line-height: 21px;
+  }
+}

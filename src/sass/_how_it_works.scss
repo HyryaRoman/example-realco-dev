@@ -1,5 +1,4 @@
-@use "color-theme" as colors;
-@use "baseline" as baseline;
+@use "color-theme" as theme;
 
 .how_it_works {
   .how_it_works__description {
@@ -18,12 +17,12 @@
   .hiw-card-holder__card {
     display: block;
 
-    border: 1px solid colors.$bg-darker;
+    border: 1px solid theme.$bg-darker;
     border-radius: 16px;
 
-    background-color: colors.$bg-light;
+    background-color: theme.$bg-light;
 
-    box-shadow: baseline.$box-shadow;
+    box-shadow: theme.$box-shadow;
   }
 
   .hiw-card-holder__card-icon {
@@ -48,7 +47,7 @@
     line-height: 24px;
     text-align: center;
 
-    color: colors.$text-light;
+    color: theme.$text-light;
 
     &.hiw-card-holder__card-description--wide {
       max-width: 340px;
