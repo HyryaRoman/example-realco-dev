@@ -1,0 +1,150 @@
+@use "color-theme" as colors;
+
+.properties-section {
+  position: relative;
+  padding: 128px 0 157px;
+  margin: 0;
+  background-color: colors.$bg-dark;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 135px;
+    height: 135px;
+    background-image: url('../icons/decor/top-right.svg');
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 135px;
+    height: 135px;
+    background-image: url('../icons/decor/bottom-left.svg');
+  }
+}
+
+.properties {
+  .properties__title {
+    margin-bottom: 82px;
+  }
+
+  .properties__card-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  .properties__btn-panel {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .properties__explore-btn {
+    margin-right: 30px;
+    padding: 13px 25px;
+  }
+
+  .properties__contact-btn {
+    padding: 9px 0;
+  }
+}
+
+.property-card {
+  display: block;
+  border-radius: 0 0 12px 12px;
+  background-color: colors.$bg-light;
+
+  .property-card__image {
+    height: 268px;
+  }
+
+  .property-card__content {
+    padding: 24px;
+  }
+
+  .property-card__title {
+    margin-bottom: 3px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .property-card__price {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .property-card__location {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: colors.$text-light;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 19px;
+      height: 24px;
+      margin-right: 9px;
+
+      vertical-align: bottom;
+
+      background-image: url('../icons/properties/location.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .property-card__bathroom-count,
+  .property-card__bedroom-count,
+  .property-card__area {
+    display: inline-block;
+    // min-width: 38px;
+    margin-right: 22px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: colors.$text-light;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 19px;
+      height: 24px;
+      margin-right: 9px;
+
+      vertical-align: bottom;
+
+      // background-image: url('../icons/properties/location.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .property-card__bathroom-count:before {
+    background-image: url('../icons/properties/bathroom.svg');
+  }
+
+  .property-card__bedroom-count:before {
+    background-image: url('../icons/properties/bedroom.svg');
+  }
+
+  .property-card__area:before {
+    background-image: url('../icons/properties/area.svg');
+  }
+
+
+}

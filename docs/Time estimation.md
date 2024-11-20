@@ -29,7 +29,7 @@ Rate: $6 per hour
 - Banner: 0.7h
 - “How it works”: 1h
 - Benefits: 1.2h
-- Properties: ___
+- Properties: 1.5h SO FAR
 - Locations: ___
 - Priority: ___
 - Reviews: ___
