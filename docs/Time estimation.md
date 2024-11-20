@@ -33,7 +33,7 @@ Rate: $6 per hour
 - Locations: 0.5h SO FAR
 - Priority: 0.3h
 - Reviews: 0.7h SO FAR
-- Posts: ___
+- Posts: 1h SO FAR
 - Footer: ___
 
 Total: ___
