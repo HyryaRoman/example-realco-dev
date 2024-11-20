@@ -2,7 +2,7 @@
 
 .properties-section {
   position: relative;
-  padding: 128px 0 157px;
+  padding: 128px 0 160px;
   margin: 0;
   background-color: theme.$bg-dark;
 
@@ -34,22 +34,8 @@
   .properties__card-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
+    gap: 31px;
     margin-bottom: 80px;
-  }
-
-  .properties__btn-panel {
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .properties__explore-btn {
-    margin-right: 30px;
-    padding: 13px 25px;
-  }
-
-  .properties__contact-btn {
-    padding: 9px 0;
   }
 }
 
@@ -57,6 +43,7 @@
   display: block;
   border-radius: 0 0 12px 12px;
   background-color: theme.$bg-light;
+  box-shadow: theme.$box-shadow;
 
   .property-card__image {
     height: 268px;
@@ -145,6 +132,4 @@
   .property-card__area:before {
     background-image: url('../icons/properties/area.svg');
   }
-
-
 }
