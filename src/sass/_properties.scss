@@ -1,10 +1,10 @@
-@use "color-theme" as colors;
+@use "color-theme" as theme;
 
 .properties-section {
   position: relative;
   padding: 128px 0 157px;
   margin: 0;
-  background-color: colors.$bg-dark;
+  background-color: theme.$bg-dark;
 
   &:before {
     content: '';
@@ -56,7 +56,7 @@
 .property-card {
   display: block;
   border-radius: 0 0 12px 12px;
-  background-color: colors.$bg-light;
+  background-color: theme.$bg-light;
 
   .property-card__image {
     height: 268px;
@@ -89,7 +89,7 @@
     font-size: 16px;
     line-height: 24px;
 
-    color: colors.$text-light;
+    color: theme.$text-light;
 
     &:before {
       content: '';
@@ -117,7 +117,7 @@
     font-size: 16px;
     line-height: 24px;
 
-    color: colors.$text-light;
+    color: theme.$text-light;
 
     &:before {
       content: '';

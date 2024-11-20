@@ -1,4 +1,4 @@
-@use "color-theme" as colors;
+@use "color-theme" as theme;
 
 .markup {
   display: grid;
@@ -14,7 +14,7 @@
   }
 
   .markup__card {
-    background: colors.$bg-dark;
+    background: theme.$bg-dark;
     padding: 10px 20px 20px;
     border-radius: 6px;
 
@@ -37,37 +37,37 @@
     border-radius: 6px;
 
     &.markup__color-swatch--color-primary {
-      background: colors.$primary;
+      background: theme.$primary;
       color: white;
     }
 
     &.markup__color-swatch--color-secondary {
-      background: colors.$secondary;
+      background: theme.$secondary;
       color: white;
     }
 
     &.markup__color-swatch--color-text-light {
-      background: colors.$text-light;
+      background: theme.$text-light;
       color: white;
     }
 
     &.markup__color-swatch--color-text-dark {
-      background: colors.$text-dark;
+      background: theme.$text-dark;
       color: white;
     }
 
     &.markup__color-swatch--color-bg-light {
-      background: colors.$bg-light;
+      background: theme.$bg-light;
       color: black;
     }
 
     &.markup__color-swatch--color-bg-dark {
-      background: colors.$bg-dark;
+      background: theme.$bg-dark;
       color: black;
     }
 
     &.markup__color-swatch--color-bg-darker {
-      background: colors.$bg-darker;
+      background: theme.$bg-darker;
       color: black;
     }
   }

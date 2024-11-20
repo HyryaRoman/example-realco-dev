@@ -1,4 +1,4 @@
-@use "color-theme" as colors;
+@use "color-theme" as theme;
 
 .benefits {
   display: grid;
@@ -60,13 +60,13 @@
     font-size: 20px;
     line-height: 28px;
 
-    color: colors.$text-dark;
+    color: theme.$text-dark;
   }
 
   .bnf-card-holder__description {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: colors.$text-light;
+    color: theme.$text-light;
   }
 }
