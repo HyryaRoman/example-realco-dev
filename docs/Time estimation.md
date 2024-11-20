@@ -31,7 +31,7 @@ Rate: $6 per hour
 - Benefits: 1.2h
 - Properties: 1.5h SO FAR
 - Locations: 0.5h
-- Priority: ___
+- Priority: 0.3h
 - Reviews: ___
 - Posts: ___
 - Footer: ___
