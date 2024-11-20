@@ -1,0 +1,91 @@
+@use "color-theme" as theme;
+
+.reviews {
+  margin: 157px auto;
+
+  .reviews__title {
+    margin-bottom: 27px;
+  }
+
+  .reviews__description {
+    text-align: center;
+  }
+
+  .reviews__card-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 79px;
+  }
+}
+
+.review-card {
+  display: block;
+  padding: 32px;
+  border: 1px solid theme.$bg-darker;
+  border-radius: 16px;
+  box-shadow: theme.$box-shadow;
+
+  .review-card__rating {
+    display: flex;
+    gap: 3px;
+    height: 20px;
+    margin-bottom: 28px;
+
+    & > * {
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  .review-card__content {
+    max-width: 327px;
+    margin-bottom: 29px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: theme.$text-dark;
+  }
+
+  .review-card__profile {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-areas:
+      "icon name"
+      "icon role";
+    gap: 0 16px;
+  }
+
+  .review-card__icon {
+    grid-area: icon;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 100vh;
+
+    background-color: theme.$bg-dark;
+  }
+
+  .review-card__name {
+    grid-area: name;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: theme.$text-dark;
+  }
+
+  .review-card__role {
+    grid-area: role;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: theme.$text-light;
+  }
+}
