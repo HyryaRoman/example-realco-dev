@@ -30,9 +30,9 @@ Rate: $6 per hour
 - “How it works”: 1h
 - Benefits: 1.2h
 - Properties: 1.5h SO FAR
-- Locations: 0.5h
+- Locations: 0.5h SO FAR
 - Priority: 0.3h
-- Reviews: ___
+- Reviews: 0.7h SO FAR
 - Posts: ___
 - Footer: ___
 
