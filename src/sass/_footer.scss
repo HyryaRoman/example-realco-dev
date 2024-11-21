@@ -1,0 +1,129 @@
+@use "color-theme" as theme;
+
+.footer {
+  .footer__info {
+    display: grid;
+    grid-template-columns: 1fr 384px;
+    gap: 128px;
+    padding: 64px 0 72px;
+  }
+
+  .footer__sitemap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer__logo {
+    width: 105px;
+  }
+
+  .footer__title {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: theme.$text-dark;
+  }
+
+  .footer__link-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+  }
+
+  .footer__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+
+    color: theme.$text-dark;
+  }
+
+  .footer__subscribe {
+    .footer__title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer__text {
+    margin-bottom: 14px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: theme.$text-light;
+  }
+
+  .footer__subscription-input {
+    display: grid;
+    grid-template-columns: 1fr 0.53fr;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+
+  .footer__input-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: theme.$text-light;
+  }
+
+  .footer__terms {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: theme.$text-light;
+  }
+
+  .footer__fine-link {
+    padding: 0 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.footnote {
+  background-color: theme.$bg-dark;
+
+  .footnote__container {
+    $padding: 6px;
+
+    display: flex;
+    gap: 32px;
+    max-width: 1152px + 2 * $padding;
+    margin: 0 auto;
+    padding: 25px $padding;
+  }
+
+  .footnote__author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: theme.$text-light;
+  }
+
+  .footnote__author-link {
+    padding: 0 8px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .footnote__contacts {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  .footnote__social {
+    display: inline-block;
+    width: 24px;
+  }
+}
