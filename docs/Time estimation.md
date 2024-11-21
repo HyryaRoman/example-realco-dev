@@ -11,8 +11,9 @@
 - Reviews: 1h
 - Posts: 3h
 - Footer: 1h
+- Scripting: 2h
 
-Estimated Total: 16h
+Estimated Total: 18h
 
 **Adjusted Total: 24h**
 
@@ -29,12 +30,13 @@ Rate: $6 per hour
 - Banner: 0.7h
 - “How it works”: 1h
 - Benefits: 1.2h
-- Properties: 1.5h SO FAR
-- Locations: 0.5h SO FAR
+- Properties: 1.5h
+- Locations: 0.5h
 - Priority: 0.3h
-- Reviews: 0.7h SO FAR
-- Posts: 1h SO FAR
+- Reviews: 0.7h
+- Posts: 1h
 - Footer: 1h
+- Scripting: __
 
 Total: ___
 
