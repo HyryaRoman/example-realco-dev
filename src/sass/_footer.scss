@@ -87,8 +87,42 @@
     text-decoration: none;
     color: inherit;
   }
+}
 
-  .footer__social {
+.footnote {
+  background-color: theme.$bg-dark;
+
+  .footnote__container {
+    $padding: 6px;
+
+    display: flex;
+    gap: 32px;
+    max-width: 1152px + 2 * $padding;
+    margin: 0 auto;
+    padding: 25px $padding;
+  }
+
+  .footnote__author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: theme.$text-light;
+  }
+
+  .footnote__author-link {
+    padding: 0 8px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .footnote__contacts {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  .footnote__social {
     display: inline-block;
     width: 24px;
   }
