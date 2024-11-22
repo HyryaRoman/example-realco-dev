@@ -1,0 +1,23 @@
+[
+  {
+    "rating": 5,
+    "review": "Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus, nec molestie libero ultricies nec. Aenean lacinia dui elit, ut gravida quam.",
+    "icon": "assets/samples/img/reviews/1.png",
+    "name": "Michael Webb",
+    "role": "Customer"
+  },
+  {
+    "rating": 5,
+    "review": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi pretium iaculis ultricies. Aenean in leo vitae tortor.",
+    "icon": "assets/samples/img/reviews/2.png",
+    "name": "Amber Keene",
+    "role": "Customer"
+  },
+  {
+    "rating": 5,
+    "review": "Condimentum viverra orci. Pellentesque suscipit odio nisl, non ultricies purus mattis eget. In placerat, lorem a sodales ullamcorper, eros nibh laoreet nisl.",
+    "icon": "assets/samples/img/reviews/3.png",
+    "name": "Sarah Tarleton",
+    "role": "Customer"
+  }
+]

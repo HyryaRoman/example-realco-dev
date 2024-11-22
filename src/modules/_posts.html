@@ -9,43 +9,23 @@
       </p>
       <a href="#" class="btn btn--style-outline btn--inline posts__view-all">View all</a>
     </div>
-    <ul class="posts__card-holder">
-      <li class="post">
-        <img class="post__image" src="" />
-        <div class="post__content">
-          <h3 class="post__title">The 9 best homes in New York</h3>
-          <p class="post__description">Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue donec.</p>
-          <div class="post__metadata">
-            <p class="post__tag">Trends</p>
-            <p class="post__date">May 10, 2022</p>
-          </div>
-        </div>
-        <a href="#" class="btn btn--icon-right btn--style-floating post__read-more">Read more</a>
-      </li>
-      <li class="post">
-        <img class="post__image" src="" />
-        <div class="post__content">
-          <h3 class="post__title">How to easily buy a house with Realco</h3>
-          <p class="post__description">Praesent nec felis nisl. Phasellus eget lacus a metus fringilla fermentum sit amet.</p>
-          <div class="post__metadata">
-            <p class="post__tag">DIY</p>
-            <p class="post__date">May 10, 2022</p>
-          </div>
-        </div>
-        <a href="#" class="btn btn--icon-right btn--style-floating post__read-more">Read more</a>
-      </li>
-      <li class="post">
-        <img class="post__image" src="" />
-        <div class="post__content">
-          <h3 class="post__title">Renting houses - complete guide</h3>
-          <p class="post__description">Nunc in bibendum leo, gravida scelerisque quam nulla interdum tellus a turpis.</p>
-          <div class="post__metadata">
-            <p class="post__tag">DIY</p>
-            <p class="post__date">May 10, 2022</p>
-          </div>
-        </div>
-        <a href="#" class="btn btn--icon-right btn--style-floating post__read-more">Read more</a>
-      </li>
-    </ul>
+    <ul class="posts__card-holder" id="postList"></ul>
   </div>
+
+  <template id="post-template">
+    <li class="post">
+      <img class="post__image" src="" data-source="image" data-target="src"/>
+      <div class="post__content">
+        <h3 class="post__title" data-source="title"></h3>
+        <p class="post__description" data-source="description"></p>
+        <div class="post__metadata">
+          <p class="post__tag" data-source="tag"></p>
+          <p class="post__date" data-source="date"></p>
+        </div>
+      </div>
+      <a data-source="link" data-target="href" class="btn btn--icon-right btn--style-floating post__read-more">Read more</a>
+    </li>
+  </template>
+
+  <script src="assets/js/posts.js" async></script>
 </section>
