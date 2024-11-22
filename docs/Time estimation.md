@@ -36,7 +36,7 @@ Rate: $6 per hour
 - Reviews: 0.7h
 - Posts: 1h
 - Footer: 1h
-- Scripting: __
+- Scripting: 1.6h
 
 Total: ___
 
