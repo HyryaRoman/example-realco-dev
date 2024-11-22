@@ -56,7 +56,7 @@
     console.error("Error:", e);
   }
 
-  fetch('assets/samples/local_properties')
+  fetch('assets/samples/local_properties?count=6')
     .then(responseToJson)
     .then(createCards)
     .catch(onFetchError);
