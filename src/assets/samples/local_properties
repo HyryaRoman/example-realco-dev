@@ -1,6 +1,6 @@
 [
   {
-    "image": "assets/samples/_.png",
+    "image": "assets/samples/img/properties/1.png",
     "title": "Cozy studio in Los Angeles",
     "price": 1200,
     "location": "2263 Southlea, Los Angeles",
@@ -9,7 +9,7 @@
     "area": 840
   },
   {
-    "image": "assets/samples/_.png",
+    "image": "assets/samples/img/properties/2.png",
     "title": "Tiny home in San Diego",
     "price": 740000,
     "location": "2569 El Segundo, San Diego",
@@ -18,7 +18,7 @@
     "area": 400
   },
   {
-    "image": "assets/samples/_.png",
+    "image": "assets/samples/img/properties/3.png",
     "title": "Crown house in New York",
     "price": 980000,
     "location": "4489 Smity Fielda, New York",
@@ -27,7 +27,7 @@
     "area": 3200
   },
   {
-    "image": "assets/samples/_.png",
+    "image": "assets/samples/img/properties/4.png",
     "title": "Family house in Los Angeles",
     "price": 4200,
     "location": "2263 Southlea, Los Angeles",
@@ -36,7 +36,7 @@
     "area": 1400
   },
   {
-    "image": "assets/samples/_.png",
+    "image": "assets/samples/img/properties/5.png",
     "title": "Studio in Las Vegas",
     "price": 820000,
     "location": "2569 Halls Corner, Las Vegas",
@@ -45,7 +45,7 @@
     "area": 2400
   },
   {
-    "image": "assets/samples/_.png",
+    "image": "assets/samples/img/properties/6.png",
     "title": "San Diego story",
     "price": 3700,
     "location": "2569 El Segundo, San Diego",
