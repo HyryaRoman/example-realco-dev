@@ -4,61 +4,24 @@
     <p class="section__description reviews__description">
       Faucibus orci luctus et ultrices posuere cubilia curae.
     </p>
-    <ul class="reviews__card-holder">
-      <li class="review-card">
-        <div class="review-card__rating">
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-        </div>
-        <p class="review-card__content">
-          "Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus,
-          nec molestie libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."
-        </p>
-        <div class="review-card__profile">
-          <img class="review-card__icon" src=""/>
-          <p class="review-card__name">Michael Webb</p>
-          <p class="review-card__role">Customer</p>
-        </div>
-      </li>
-      <li class="review-card">
-        <div class="review-card__rating">
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-        </div>
-        <p class="review-card__content">
-          "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi pretium
-          iaculis ultricies. Aenean in leo vitae tortor."
-        </p>
-        <div class="review-card__profile">
-          <img class="review-card__icon" src=""/>
-          <p class="review-card__name">Amber Keene</p>
-          <p class="review-card__role">Customer</p>
-        </div>
-      </li>
-      <li class="review-card">
-        <div class="review-card__rating">
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-          <img src="assets/icons/star.svg" />
-        </div>
-        <p class="review-card__content">
-          "Condimentum viverra orci. Pellentesque suscipit odio nisl, non ultricies purus mattis eget. In placerat,
-          lorem a sodales ullamcorper, eros nibh laoreet nisl."
-        </p>
-        <div class="review-card__profile">
-          <img class="review-card__icon" src=""/>
-          <p class="review-card__name">Sarah Tarleton</p>
-          <p class="review-card__role">Customer</p>
-        </div>
-      </li>
-    </ul>
+    <ul class="reviews__card-holder" id="reviewList"></ul>
   </div>
+
+  <template id="review-star-template">
+    <img src="assets/icons/star.svg" />
+  </template>
+
+  <template id="review-template">
+    <li class="review-card">
+      <div class="review-card__rating" data-source="rating"></div>
+      <p class="review-card__content" data-source="review"></p>
+      <div class="review-card__profile">
+        <img class="review-card__icon" data-source="icon" data-target="src"/>
+        <p class="review-card__name" data-source="name"></p>
+        <p class="review-card__role" data-source="role"></p>
+      </div>
+    </li>
+  </template>
+
+  <script src="assets/js/reviews.js" async></script>
 </section>
