@@ -2,77 +2,26 @@
   <div class="container properties">
     <div class="section__text-pill section__text-pill--align-center">Properties</div>
     <h2 class="section__title properties__title">Houses in your favorite area</h2>
-    <ul class="properties__card-holder">
-      <li class="property-card">
-        <img class="property-card__image" data-source="image" data-target="src"/>
-        <div class="property-card__content">
-          <h3 class="property-card__title" data-source="title">Cozy studio in Los Angeles</h3>
-          <p class="property-card__price">$ <span data-source="price">1,200.00</span> USD</p>
-          <p class="property-card__location" data-source="location">2263 Southlea, Los Angeles</p>
-          <p class="property-card__bathroom-count" data-source="bathroom_count">2</p>
-          <p class="property-card__bedroom-count" data-source="bedroom_count">2</p>
-          <p class="property-card__area"><span data-source="area">840</span> sqft</p>
-        </div>
-      </li>
-      <li class="property-card">
-        <img class="property-card__image" data-source="image" data-target="src"/>
-        <div class="property-card__content">
-          <h3 class="property-card__title" data-source="title">Tiny home in San Diego</h3>
-          <p class="property-card__price">$ <span data-source="price">740,000.00</span> USD</p>
-          <p class="property-card__location" data-source="location">2569 El Segundo, San Diego</p>
-          <p class="property-card__bathroom-count" data-source="bathroom_count">1</p>
-          <p class="property-card__bedroom-count" data-source="bedroom_count">2</p>
-          <p class="property-card__area"><span data-source="area">400</span> sqft</p>
-        </div>
-      </li>
-      <li class="property-card">
-        <img class="property-card__image" data-source="image" data-target="src"/>
-        <div class="property-card__content">
-          <h3 class="property-card__title" data-source="title">Crown house in New York</h3>
-          <p class="property-card__price">$ <span data-source="price">980,000.00</span> USD</p>
-          <p class="property-card__location" data-source="location">4489 Smity Fielda, New York</p>
-          <p class="property-card__bathroom-count" data-source="bathroom_count">2</p>
-          <p class="property-card__bedroom-count" data-source="bedroom_count">4</p>
-          <p class="property-card__area"><span data-source="area">3200</span> sqft</p>
-        </div>
-      </li>
-      <li class="property-card">
-        <img class="property-card__image" data-source="image" data-target="src"/>
-        <div class="property-card__content">
-          <h3 class="property-card__title" data-source="title">Family house in Los Angeles</h3>
-          <p class="property-card__price">$ <span data-source="price">4,200.00</span> USD</p>
-          <p class="property-card__location" data-source="location">2263 Southlea, Los Angeles</p>
-          <p class="property-card__bathroom-count" data-source="bathroom_count">2</p>
-          <p class="property-card__bedroom-count" data-source="bedroom_count">3</p>
-          <p class="property-card__area"><span data-source="area">1400</span> sqft</p>
-        </div>
-      </li>
-      <li class="property-card">
-        <img class="property-card__image" data-source="image" data-target="src"/>
-        <div class="property-card__content">
-          <h3 class="property-card__title" data-source="title">Studio in Las Vegas</h3>
-          <p class="property-card__price">$ <span data-source="price">820,000.00</span> USD</p>
-          <p class="property-card__location" data-source="location">2569 Halls Corner, Las Vegas</p>
-          <p class="property-card__bathroom-count" data-source="bathroom_count">2</p>
-          <p class="property-card__bedroom-count" data-source="bedroom_count">3</p>
-          <p class="property-card__area"><span data-source="area">2400</span> sqft</p>
-        </div>
-      </li>
-      <li class="property-card">
-        <img class="property-card__image" data-source="image" data-target="src"/>
-        <div class="property-card__content">
-          <h3 class="property-card__title" data-source="title">San Diego story</h3>
-          <p class="property-card__price">$ <span data-source="price">3,700.00</span> USD</p>
-          <p class="property-card__location" data-source="location">2569 El Segundo, San Diego</p>
-          <p class="property-card__bathroom-count" data-source="bathroom_count">1</p>
-          <p class="property-card__bedroom-count" data-source="bedroom_count">2</p>
-          <p class="property-card__area"><span data-source="area">650</span> sqft</p>
-        </div>
-      </li>
-    </ul>
+    <ul class="properties__card-holder" id="propertiesList"></ul>
     <div class="contact-panel">
       <a href="#" class="btn btn--style-outline btn--inline contact-panel__explore">Explore properties</a>
       <a href="#" class="btn btn--style-floating btn--icon-right btn--inline contact-panel__contact">Contact agent</a>
     </div>
   </div>
+
+  <template id="property-card-template">
+    <li class="property-card">
+      <img class="property-card__image" data-source="image" data-target="src"/>
+      <div class="property-card__content">
+        <h3 class="property-card__title" data-source="title"></h3>
+        <p class="property-card__price">$ <span data-source="price"></span> USD</p>
+        <p class="property-card__location" data-source="location"></p>
+        <p class="property-card__bathroom-count" data-source="bathroom_count"></p>
+        <p class="property-card__bedroom-count" data-source="bedroom_count"></p>
+        <p class="property-card__area"><span data-source="area"></span> sqft</p>
+      </div>
+    </li>
+  </template>
+
+  <script src="assets/js/local_properties.js" async></script>
 </section>
