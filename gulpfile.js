@@ -100,7 +100,7 @@ export function watch() {
   gulp.watch(config.root.source.path, build_dev);
   gulp.watch(config.paths.templates, gulp.series(build_breakpoints, build_dev));
   gulp.watch('./gulp/config.js', (cb) => cb("Can't hotswap the config file. Please restart the 'watch' task!"));
-  gulp.series(build_breakpoints, build_dev)();
+  // gulp.series(build_breakpoints, build_dev)();
 }
 
 export function sync() {
@@ -110,6 +110,8 @@ export function sync() {
     },
     port: 3000,
     startPath: 'index.html',
+  }, (_) => {
+    watch();
   });
 }
 
@@ -119,8 +121,9 @@ export function reload(cb) {
 }
 
 export let serve =
-  gulp.parallel(
-    watch,
+  gulp.series(
+    build_breakpoints,
+    build_dev,
     sync
   );
 
