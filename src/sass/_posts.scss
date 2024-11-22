@@ -115,5 +115,9 @@
     width: fit-content;
     margin-top: auto;
     padding: 0 24px 24px;
+
+    &:hover, &:active {
+      background: none;
+    }
   }
 }

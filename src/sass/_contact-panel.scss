@@ -10,5 +10,9 @@
 
   .contact-panel__contact {
     padding: 9px 0;
+
+    &:hover, &:active {
+      background: none;
+    }
   }
 }
