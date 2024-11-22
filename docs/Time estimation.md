@@ -38,10 +38,10 @@ Rate: $6 per hour
 - Footer: 1h
 - Scripting: 1.6h
 
-Total: ___
+Total: 13.5h
 
 ### Cost
 
-Rate: ___ per hour
+Rate: $6 per hour
 
-**Cost: ___**
+**Cost: $81**
